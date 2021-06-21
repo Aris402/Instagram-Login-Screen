@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Segoe UI";
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(243,243,243);
+}
+main{
+    display: flex;
+    /*Alinhamento vertical*/
+    align-items: center;
+    /*Alinhamento horizontal*/
+    justify-content: start;
+    height: 100vh;
+}
+.insta-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.insta-continue{
+    display: flex;
+    align-items: center;
+    /*Estes códigos abaixo mudam o eixo para que os itens se alinhem em coluna vertical*/
+    justify-content: space-around;
+    flex-direction: column;
+    width: 350px;
+    height: 92px;
+    min-height: 34rem;
+}
+.right-containers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+.white-bg{
+    background-color: #ffffff;
+    border: 1px solid lightgray;
+}
+.right-containers:nth-child(1){
+    min-height: 19rem;
+    font-size: 14px;
+}
+.right-containers:nth-child(2){
+    text-align: center;
+    font-size: 14px;
+    color: #8e8e8e;
+    margin-top: 10px;
+}
+.right-containers:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    padding-top: 0;
+}
+#insta-logo{
+    height: 3.25rem;
+}
+#profile-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.app-imgs{
+    height: 2.5rem;
+}
+#continue-as{
+    margin-top: 4%;
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 6px 8px 6px 8px;
+    border-radius: 4px;
+}
+.font-weight{
+    font-weight: 600;
+}
+#app-desc{
+    margin: 10px 20px 10px 20px;
+    font-size: 14px;
+}
+#remove-account{
+    margin-bottom: 2%;
+    margin-top: 4%;
+}
+.download-apps{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 350px;
+    height: 44px;
+}
+@media screen and (max-width: 876px){
+    .insta-phone{
+        display: none;
+    }
+}
